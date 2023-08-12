@@ -1,0 +1,115 @@
+.calendar-container {
+  position: relative;
+}
+.calendar-input {
+  background-color: "#EFEFEF80";
+  padding: 0 5px 0 5px;
+  width: 100%;
+  height: 38px;
+  border: 2px solid rgb(113, 113, 113);
+  transition: 0.5;
+  outline: none;
+  direction: rtl;
+}
+.calendar-input:focus {
+  border: 2px solid rgba(41, 63, 88, 0.5);
+}
+.datepicker-section {
+  padding: 8px;
+  width: 100%;
+  box-shadow: 0px 2px 12px 1px rgba(198, 198, 198, 0.5);
+}
+.calender-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.calender-header img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.week-days {
+  margin-top: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  text-align: center;
+  overflow: hidden;
+}
+.day {
+  padding: 14px 16px;
+  /* padding: 8px; */
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+.today {
+  /* border:1px dashed hsl(193, 69%, 47%);  */
+  border: 1px dashed #25a8cc;
+  border-radius: 50%;
+  font-weight: bold !important;
+  color: #25a8cc !important;
+  padding: 14px 16px;
+  /* padding: 8px; */
+
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+
+.inactive {
+  cursor: default !important;
+}
+.disabled {
+  cursor: default !important;
+  opacity: 0.5;
+}
+.selected {
+  background-color: #d3f5fc;
+}
+.checkin {
+  background-color: #25a8cc;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-radius: 0 50% 50% 0;
+  /* border-radius: 50%; */
+  color: white !important;
+}
+.checkout {
+  background-color: #25a8cc;
+  border-radius: 50% 0 0 50%;
+  color: white !important;
+}
+.single-checkin {
+  border-radius: 50%;
+  background-color: #25a8cc;
+  color: white !important;
+}
+.weeks {
+  color: #7a7a7a;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+}
+.display-date {
+  direction: rtl;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.calendar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  direction: rtl;
+}
+.calendar-button {
+  background-color: #50c7b5;
+  padding: 7px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 18px;
+}
