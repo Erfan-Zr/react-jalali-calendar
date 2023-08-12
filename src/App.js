@@ -10,7 +10,7 @@ function App() {
       <QueryClientProvider client={queryClien}>
         <div className="calendar">
           <Calendar mode="range" />
-          {/* mdoe is either range or single */}
+          {/* mode is either range or single */}
         </div>
       </QueryClientProvider>
     </div>

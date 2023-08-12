@@ -155,11 +155,16 @@ const Calendar = (props) => {
   };
 
   const handleConfirm = () => {
-    setFullDate(
-      `${checkin?.format("YYYY-MM-DD")}, ${
-        checkout ? checkout?.format("YYYY-MM-DD") : ""
-      }`
-    );
+    if (props.mode === "range") {
+      setFullDate(
+        `${checkin?.format("YYYY-MM-DD")}, ${
+          checkout ? checkout?.format("YYYY-MM-DD") : ""
+        }`
+      );
+    } else {
+      setFullDate(checkin?.format("YYYY-MM-DD"));
+    }
+
     setIsCalendarOpen(false);
   };
 
