@@ -236,9 +236,11 @@ const Calendar = (props) => {
               <div className="display-date">
                 {/* <span>{checkin?.format("jYYYY/jMM/jDD")} :تاریخ ورود</span>
                 <span>{checkout?.format("jYYYY/jMM/jDD")} :تاریخ خروج</span> */}
-                <span>تاریخ ورود: {checkin?.format("jYYYY/jMM/jDD")}</span>
+                <span>تاریخ ورود:</span>
+                <span>{checkin?.format("jYYYY/jMM/jDD")}</span>
 
-                <span>تاریخ خروج: {checkout?.format("jYYYY/jMM/jDD")}</span>
+                <span>تاریخ خروج:</span>
+                <span>{checkout?.format("jYYYY/jMM/jDD")}</span>
               </div>
             ) : (
               <div className="display-date">
